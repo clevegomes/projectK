@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
             $table->string('confirmation_token');
             $table->dateTime('confirmed_at');
             $table->dateTime('confirmation_sent_at');
-            $table->string('profile_image');
+            $table->string('profile_image')->nullable();
             $table->integer('country_id');
             $table->integer('nationality_id');
             $table->float('total_exprience', 8, 2);
