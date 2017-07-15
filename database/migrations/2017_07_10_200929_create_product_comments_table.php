@@ -18,6 +18,7 @@ class CreateProductCommentsTable extends Migration
             $table->integer('product_id');
             $table->boolean('verified');
             $table->integer('parent_message_id');
+            $table->integer('user_id');
             $table->timestamps();
         });
 

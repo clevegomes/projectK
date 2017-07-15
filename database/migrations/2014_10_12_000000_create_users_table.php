@@ -35,6 +35,7 @@ class CreateUsersTable extends Migration
             $table->integer('nationality_id');
             $table->float('total_exprience', 8, 2);
             $table->boolean('active');
+            $table->enum('completion_status',[1,2,3]);
             $table->softDeletes();
             $table->timestamps();
         });
