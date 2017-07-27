@@ -198,8 +198,20 @@
 
 
 
-
-
+    <!-- Script -->
+    <script src="{{ asset('js/jquery-3.2.0.min.js')}}"></script>
+    <script src="{{ asset('js/theme-plugins.js')}}"></script>
+    <script src="{{ asset('js/main.js')}}"></script>
+    <script src="{{ asset('js/moment.min.js')}}"></script>
+    <script src="{{ asset('js/daterangepicker.min.js')}}"></script>
+{{--    <script src="{{ asset('js/all.js')}}"></script>--}}
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Roboto:300,400,500,700:latin']
+            }
+        });
+    </script>
 
 
     </body>

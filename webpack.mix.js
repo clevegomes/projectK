@@ -22,7 +22,7 @@ mix.js(['resources/assets/js/app.js'
         // 'resources/assets/js/daterangepicker.min.js',
         // 'resources/assets/js/mediaelement-and-player.min.js',
         // 'resources/assets/js/mediaelement-playlist-plugin.min.js'
-        ], 'public/js')
+        ], 'public/all.js')
    // .sass('resources/assets/sass/app.scss', 'resources/assets/css')
    .styles([
     // 'resources/assets/css/app.css',
@@ -34,7 +34,8 @@ mix.js(['resources/assets/js/app.js'
     'resources/assets/css/fonts.css',
     'resources/assets/css/jquery.mCustomScrollbar.min.css',
     'resources/assets/css/daterangepicker.css',
-    'resources/assets/css/bootstrap-select.css'
+    'resources/assets/css/bootstrap-select.css',
+    'resources/assets/css/custom.css'
 ], 'public/css/all.css');
 
 
