@@ -54,10 +54,10 @@
                                 @endforeach
                             </ul>
                         @endif
-                    <div class="ui-block ">
+                    <div class="">
 
                         {!! Form::open() !!}
-                        <div class="ui-block-content ">
+                        <div class="ui-block-content subscribe-small">
 
                             <div class="row ">
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -68,7 +68,7 @@
                                 <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
                                     <div>
-                                        <button class="btn btn-purple btn-sm">Invite for Beta Testing</button>
+                                        <button  style="height: 39px;" class="btn btn-purple btn-sm">Invite for Beta Testing</button>
                                     </div>
                                 </div>
                             </div>
@@ -83,5 +83,5 @@
     </div>
 
     <img class="img-bottom" src="img/group-bottom.png" alt="friends">
-    <img class="img-rocket" src="img/rocket.png" alt="rocket">
+    {{--<img class="img-rocket" src="img/rocket.png" alt="rocket">--}}
 </div>
