@@ -18,6 +18,17 @@ class HomeController extends Controller
         return view('pages.home')->with(['subscribedFlag'=>'null']);
     }
 
+
+    public function subscription(){
+
+        $subscriptionsList= Subscription::all('email');
+
+        return view('pages.subscription')
+            ->with(['subscriptionsList'=>$subscriptionsList]);
+
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

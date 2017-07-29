@@ -11,6 +11,7 @@
 |
 */
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/subscriptions', 'HomeController@subscription')->name('subscriptions');
 Route::post('/', 'HomeController@store');
 
 //Route::get('/', function () {
