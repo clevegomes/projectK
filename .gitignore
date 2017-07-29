@@ -14,5 +14,5 @@ bootstrap/app.php
 bootstrap/autoload.php
 public/js/app.js
 package-lock.json
-public/css/
+public/css/**.*
 public/mix-manifest.json

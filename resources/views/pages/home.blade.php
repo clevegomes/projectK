@@ -1,6 +1,6 @@
 @extends('app')
 
-@section('title', " I World's First Global SocioCommerce Ecosystem I Social I Services I Market Place")
+@section('title', " World's First Global SocioCommerce Ecosystem | Social | Services | Market Place")
 @section('content')
     <div class="landing-page">
         <div class="main-header main-landing">
