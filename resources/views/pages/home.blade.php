@@ -1,6 +1,6 @@
 @extends('app')
 
-
+@section('title', " I World's First Global SocioCommerce Ecosystem I Social I Services I Market Place")
 @section('content')
     <div class="landing-page">
         <div class="main-header main-landing">
@@ -29,9 +29,7 @@
                             <pre class="tab"> </pre>
 
 
-                            <p>We included all you may need to make it the best marketplace for 220+ services! Things like profile pages, newsfeed,
-                                friend groups, statistics, birthdays, community badges, events calendar, full music player and
-                                unique iconography! Its One of its kind! We are sure you would love it :-)
+                            <p>Kroble is made with an always “YOU” centric purpose.Your one stop place for over 300+ services.Coupled with all the Social Media excitements. No wonder it’s “SocioCommerce”. We can’t wait for you to give it a try. Launching Soon,Globally! We are sure you would love it 🙂
                             </p>
 
 
