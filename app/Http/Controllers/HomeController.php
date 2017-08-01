@@ -56,7 +56,8 @@ class HomeController extends Controller
         $email_id = $request->get('email_id');
         $subscription = Subscription::where('email',$email_id)->first();
         if($subscription){
-            return view('pages.home')->with(['subscribedFlag'=>"fail"]);
+            $subcount= Subscription::count();
+            return view('pages.home')->with(['subscribedFlag'=>"fail",'subcount'=>$subcount]);
 
         }
         else{
@@ -64,9 +65,9 @@ class HomeController extends Controller
             $subscription = new Subscription();
             $subscription->email = $email_id;
             $subscription->save();
+            $subcount= Subscription::count();
 
-
-            return view('pages.home')->with(['subscribedFlag'=>"success"]);
+            return view('pages.home')->with(['subscribedFlag'=>"success",'subcount'=>$subcount]);
         }
 
     }
