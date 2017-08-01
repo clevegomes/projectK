@@ -77,7 +77,9 @@
                                     {!! Form::close() !!}
                                 </div>
                             @endif
-
+                            <p>
+                                Total registrations for Beta testing {{ number_format(10300+ $subcount)}}
+                            </p>
                         </div>
                     </div>
                 </div>

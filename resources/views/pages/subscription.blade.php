@@ -5,8 +5,9 @@
             <div class="col-xl-9 push-xl-3 col-lg-9 push-lg-3 col-md-12 col-sm-12 col-xs-12">
                 <div class="ui-block">
                     <div class="ui-block-title">
-                        <h6 class="title">Subcriptions for  Beta Testing.</h6>
-                        <a href="#" class="more"><svg class="olymp-three-dots-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#olymp-three-dots-icon"></use></svg></a>
+                        <h6 class="title">Subcriptions for  Beta Testing</h6>
+                        <h6> Counter:{{$subscriptionsList->count()}}</h6>
+                        <a href="" class="more"><svg class="olymp-three-dots-icon"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#olymp-three-dots-icon"></use></svg></a>
                     </div>
 
                     <ul class="notification-list friend-requests">
@@ -20,11 +21,14 @@
                                         {{$subscription->email}}
                                     </a>
                                 </div>
-
+                                <div class="post__date">
+                                    <time class="published notification-link"  >
+                                         ( {{Carbon\Carbon::parse($subscription->created_at)->format('d M Y')}} )
+                                    </time>
+                                </div>
                             </li>
 
                         @endforeach
-
 
                     </ul>
 

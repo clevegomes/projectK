@@ -15,13 +15,17 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('pages.home')->with(['subscribedFlag'=>'null']);
+
+        $subcount= Subscription::count();
+
+        return view('pages.home')->with(['subscribedFlag'=>'null','subcount'=>$subcount]);
     }
 
 
     public function subscription(){
 
-        $subscriptionsList= Subscription::all('email');
+//        $subscriptionsList= Subscription::all('email');
+        $subscriptionsList= Subscription::orderBy('id','desc')->get();
 
         return view('pages.subscription')
             ->with(['subscriptionsList'=>$subscriptionsList]);
