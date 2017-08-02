@@ -73,13 +73,20 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row ">
+                                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <p>
+                                                    Total registrations for Beta testing {{ number_format(10300+ $subcount)}}
+                                                </p>
+                                            </div>
+
+                                        </div>
                                     </div>
                                     {!! Form::close() !!}
                                 </div>
                             @endif
-                            <p>
-                                Total registrations for Beta testing {{ number_format(10300+ $subcount)}}
-                            </p>
+
+
                         </div>
                     </div>
                 </div>
