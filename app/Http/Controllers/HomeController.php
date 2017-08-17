@@ -82,14 +82,14 @@ class HomeController extends Controller
             $subcount= Subscription::count();
 
 
-            $beautymail = app()->make(Beautymail::class);
-            $beautymail->send('emails.subscriptions',  ["email_id" => $email_id], function($message) use($email_id)
-            {
-                $message
-                    ->from('welcome@kroble.com')
-                    ->to($email_id, 'Kroble Team')
-                    ->subject('Welcome Onboard Kroble');
-            });
+//            $beautymail = app()->make(Beautymail::class);
+//            $beautymail->send('emails.subscriptions',  ["email_id" => $email_id], function($message) use($email_id)
+//            {
+//                $message
+//                    ->from('welcome@kroble.com')
+//                    ->to($email_id, 'Kroble Team')
+//                    ->subject('Welcome Onboard Kroble');
+//            });
 
             return view('pages.home')->with(['subscribedFlag'=>"success",'subcount'=>$subcount]);
         }
