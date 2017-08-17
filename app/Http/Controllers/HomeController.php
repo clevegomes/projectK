@@ -3,8 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateSubscriptionRequest;
+use App\Mail\Subcription;
 use App\Subscription;
+use Illuminate\Support\Facades\Mail;
 use Request;
+use Snowfire\Beautymail\Beautymail;
 
 class HomeController extends Controller
 {
@@ -16,8 +19,19 @@ class HomeController extends Controller
     public function index()
     {
 
+
+
         $subcount= Subscription::count();
 
+
+
+//        Mail::send('emails.subscriptions', ['key' => 'value'], function($message)
+//        {
+//            $message->to('gomescleve@gmail.com', 'Kroble')->subject('Welcome Onboard!');
+//        });
+
+
+//        Mail::to('gomescleve@gmail.com')->send(new Subcription());
         return view('pages.home')->with(['subscribedFlag'=>'null','subcount'=>$subcount]);
     }
 
@@ -66,6 +80,16 @@ class HomeController extends Controller
             $subscription->email = $email_id;
             $subscription->save();
             $subcount= Subscription::count();
+
+
+            $beautymail = app()->make(Beautymail::class);
+            $beautymail->send('emails.subscriptions',  ["email_id" => $email_id], function($message) use($email_id)
+            {
+                $message
+                    ->from('welcome@kroble.com')
+                    ->to($email_id, 'Kroble Team')
+                    ->subject('Welcome Onboard Kroble');
+            });
 
             return view('pages.home')->with(['subscribedFlag'=>"success",'subcount'=>$subcount]);
         }

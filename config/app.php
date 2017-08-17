@@ -164,6 +164,7 @@ return [
         Illuminate\View\ViewServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Spatie\Backup\BackupServiceProvider::class,
+        Snowfire\Beautymail\BeautymailServiceProvider::class,
 
         /*
          * Package Service Providers...

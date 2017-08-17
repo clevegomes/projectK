@@ -14,6 +14,20 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/subscriptions', 'HomeController@subscription')->name('subscriptions');
 Route::post('/', 'HomeController@store');
 
+Route::get('/test', function()
+{
+    $beautymail = app()->make(Snowfire\Beautymail\Beautymail::class);
+    $beautymail->send('emails.welcome', [], function($message)
+    {
+        $message
+            ->from('hello@kroble.com')
+            ->to('gomescleve@gmail.com', 'John Smith')
+            ->subject('Welcome!');
+    });
+
+});
+
+
 //Route::get('/', function () {
 //    return view('welcome');
 //});
