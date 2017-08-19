@@ -36,7 +36,7 @@
     </a>
     </span>
      <span style="padding: 0 0 0 10px;">
-      <a href="https://twitter.com/kroble_com">
+      <a href="https://www.instagram.com/kroble_com">
         <img  src="http://www.kroble.com/img/instagram-icon_32x32.png">
       </a>
     </span>
