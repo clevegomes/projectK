@@ -8,10 +8,10 @@
                         <img src="http://www.kroble.com/img/image1.png" alt="Header Image" width="300px;"  style="display: block;" border="0" />
                     </td>
                     <td  width="100%">
-                        <span style="font-weight: 100px;font-size: 30px;">Welcome OnBoard!</span>
-                        <span style="display: block;padding: 40px 0 0 0;">We’re delighted to have you. You shall be among the first ones to hear about Kroble.com beta program launch.
+                        <span style="font-weight: 100px;font-size: 30px;color: #FFFFFF;">Welcome OnBoard!</span>
+                        <span style="display: block;padding: 40px 0 0 0;color: #FFFFFF;">We’re delighted to have you. You shall be among the first ones to hear about Kroble.com beta program launch.
    </span>
-                        <span style="display: block;padding: 30px 0 0 0;">
+                        <span style="display: block;padding: 30px 0 0 0;color: #FFFFFF;">
    We appreciate your patronage !
    </span>
                     </td>
@@ -81,10 +81,10 @@
                         <img src="http://www.kroble.com/img/image2.png" alt="Footer Image" width="300px;"  style="display: block;" border="0" />
                     </td>
                     <td  width="100%">
-                        <span style="font-weight: 100px;font-size: 30px;">Coming Soon!</span>
-                        <span style="display: block;padding-top: 40px;">We couldn’t be more excited to have our beta program readiness for you.
+                        <span style="font-weight: 100px;font-size: 30px;color: #FFFFFF;">Coming Soon!</span>
+                        <span style="display: block;padding-top: 40px;color: #FFFFFF;">We couldn’t be more excited to have our beta program readiness for you.
    </span>
-                        <span style="display: block;padding-top: 30px;">
+                        <span style="display: block;padding-top: 30px;color: #FFFFFF;">
    Look out for www.kroble.com
    </span>
                     </td>
