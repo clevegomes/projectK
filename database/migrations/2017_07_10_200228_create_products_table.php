@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->dateTime('verified_date');
             $table->integer('likes');
             $table->integer('seen');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
 

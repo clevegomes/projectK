@@ -20,6 +20,8 @@ class CreateProductSamplesTable extends Migration
             $table->string('sample_file_name');
             $table->string('sample_file_url');
             $table->timestamps();
+            $table->foreign('product_id')->references('id')->on('products');
+
         });
 
 

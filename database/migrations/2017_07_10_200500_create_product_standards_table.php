@@ -20,6 +20,7 @@ class CreateProductStandardsTable extends Migration
             $table->float('max_size',8,2);
             $table->string('format');
             $table->timestamps();
+            $table->foreign('product_id')->references('id')->on('products');
         });
     }
 

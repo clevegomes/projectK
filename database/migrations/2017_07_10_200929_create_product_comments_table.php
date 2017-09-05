@@ -20,6 +20,8 @@ class CreateProductCommentsTable extends Migration
             $table->integer('parent_message_id');
             $table->integer('user_id');
             $table->timestamps();
+            $table->foreign('product_id')->references('id')->on('products');
+
         });
 
 
